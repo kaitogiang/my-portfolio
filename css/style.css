@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+:root {
+    --text-color: #000000;
+    --bg-primary: #D7D7D7;
+    --bg-secondary: #000000;
+    --white-color: #FFFFFF;
+    --font-size-15: 15px;
+    --grey-text-color: #909090;
+    --grey-bg-color: #C4C4C4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle, var(--white-color) 0%, var(--bg-primary) 100%);
+    z-index: -1;
+}
+
+.container {
+    color: var(--white-color);
+}
+
+.logo {
+    width: 59.69px;
+    height: 50px;
+}
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar  .navbar-item {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.navbar .navbar-item:last-child {
+    background-color: var(--white-color);
+    border-radius: 30px;
+    color: var(--text-color);
+    padding: 8px 14px;
+}
+
+.navbar .navbar-item:not(.navbar-item:last-child):hover {
+    color: var(--grey-text-color);
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.brief-introduction {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.brief-introduction .greeting {
+    font-size: 30px;
+    color: var(--text-color);
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.brief-introduction .my-name {
+    font-size: 40px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.brief-introduction .subtitle {
+    font-size: 18px;
+    color: var(--grey-text-color);
+    font-weight: bold;
+}
+
+.brief-introduction .icon-container {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.brief-introduction .icon-container i {
+    font-size: 20px;
+    color: var(--white-color);
+    border: 1px solid var(--grey-bg-color);
+    background-color: var(--grey-bg-color);
+    width: 40px;
+    padding: 5px;
+    margin-right: 10px;
+    box-shadow: 0 3px 2px 0px var(--grey-text-color);
+}
