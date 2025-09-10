@@ -1,0 +1,52 @@
+:root {
+    --text-color: #000000;
+    --bg-primary: #D7D7D7;
+    --bg-secondary: #000000;
+    --white-color: #FFFFFF;
+    --font-size-15: 15px;
+    --grey-text-color: #909090;
+    --grey-bg-color: #C4C4C4;
+    --bg-gradient-s1: #121212;
+    --bg-gradient-s2: #1D1D1D;
+
+    /* Font */
+    --font-title: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle, var(--white-color) 0%, var(--bg-primary) 100%);
+    z-index: -1;
+    overflow-x: hidden;
+}

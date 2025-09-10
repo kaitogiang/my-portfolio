@@ -1,0 +1,39 @@
+@import url('../base.css');
+
+.header__logo {
+    width: 59.69px;
+    height: 50px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    font-family: var(--font-title);
+}
+
+.header__nav-item {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: all .5s ease;
+}
+
+.header__nav-item:not(:last-of-type):hover {
+    color: var(--grey-text-color);
+}
+
+.header__nav-item:last-child {
+    background-color: var(--white-color);
+    border-radius: 30px;
+    color: var(--text-color);
+    padding: 8px 14px;
+}
+
+.header__nav-item:last-child:hover {
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+}
