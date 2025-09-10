@@ -65,3 +65,12 @@
     grid-row: 3;
     text-align: justify;
 }
+
+.experience__image {
+    transition: all 0.3s ease;
+}
+
+.experience__image:hover {
+    transform: translateY(-2px);
+    box-shadow: 3px 5px 5px 0px var(--grey-text-color);
+}

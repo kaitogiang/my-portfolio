@@ -1,8 +1,7 @@
-@import url('../base.css');
-
+@import url("../base.css");
 
 .hero__intro {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -43,11 +42,11 @@
     padding: 5px;
     margin-right: 10px;
     box-shadow: 0 3px 2px 0px var(--grey-text-color);
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
 
 .hero__social-link:hover {
-     transform: translateY(-2px);
+    transform: translateY(-2px);
     box-shadow: 0 5px 2px 0px var(--grey-text-color);
 }
 
