@@ -5,12 +5,9 @@
 @import url('components/hero.css');
 @import url('components/card.css');
 @import url('components/about.css');
+@import url('components/skills.css');
 
-.container {
-    color: var(--white-color);
-}
-
-.container .homepage__wrapper::after {
+/* .container .homepage__wrapper::after {
     content: "";
     position: absolute;
     background-color: var(--bg-secondary);
@@ -19,17 +16,8 @@
     top: 0%;
     right: -4%;
     z-index: -1;
-
     clip-path: polygon(19% 0, 100% 0%, 100% 100%, 0% 100%);
-}
-
-.content-block {
-    font-family: var(--font-body);
-}
-
-.container .card-dark .basic-intro-title, .content-block {
-    padding: 10px 0 0 30px;
-} 
+} */
 
 .section-box__title {
     font-family: var(--font-title);
@@ -39,96 +27,4 @@
     padding: 8px 30px;
     outline: 3px solid;
     letter-spacing: 3px;
-}
-
-.about-me-container {
-    height: 100vh;
-    color: var(--text-color);
-    padding: 10px 15% 0 15%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.page-title {
-    font-family: var(--font-title);
-    text-align: center;
-    border: 1px solid;
-    width: fit-content;
-    padding: 8px 30px;
-    outline: 3px solid;
-    letter-spacing: 3px;
-}
-
-.about-me-container .content-block {
-    text-align: center;
-}
-
-
-.about-me-container .seperator {
-    width: 15%;
-}
-
-.about-me-container .expertise .expertise-item-content {
-    text-align: justify;
-    padding: 20px 0;
-}
-
-
-.skills-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--text-color);
-    min-height: 100vh;
-    margin-top: 50px;
-    justify-content: space-around;
-    padding: 0 25%;
-}
-
-.skills-container .page-title {
-    margin-top: 20px;
-    margin-bottom: 10%;
-}
-
-.skills-container .figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all .3s ease;
-}
-
-.skills-container .figure__img {
-    width: 60px;
-}
-
-.skills-container .figure__caption {
-    text-align: center;
-    font-family: var(--font-title);
-    font-size: 18px;
-    letter-spacing: 3px;
-}
-
-.skills-container .skills-group {
-    width: 100%;
-    margin-bottom: 10%;
-}
-
-.skills-container .skills-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.skills-container .skills-group :first-child{
-    grid-column: 1 / 5;
-    padding-bottom: 30px;
-    font-family: var(--font-title);
-    letter-spacing: 3px;
-    font-weight: 600;
-    font-size: 22px;
-}
-
-.skills-container .figure:hover {
-    transform: scale(1.1)
 }

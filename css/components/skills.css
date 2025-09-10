@@ -1,0 +1,49 @@
+@import url('../base.css');
+
+.skills__group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.skills__title {
+    margin-top: 20px;
+    margin-bottom: 10%;
+}
+
+.skills__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .3s ease;
+}
+
+.skills__icon {
+    width: 60px;
+}
+
+.skills__caption {
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.skills__group {
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.skills__group-title {
+    grid-column: 1 / 5;
+    padding-bottom: 30px;
+    font-family: var(--font-title);
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.skills__item:hover {
+    transform: scale(1.1)
+}
+

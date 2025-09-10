@@ -33,3 +33,7 @@
     width: 50%;
     height: 150%;
 }
+
+.homepage .card__text, .card__title {
+    color: var(--white-color);
+}
