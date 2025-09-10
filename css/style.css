@@ -23,6 +23,26 @@
     padding: 0;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 body {
     height: 100vh;
     background: radial-gradient(circle, var(--white-color) 0%, var(--bg-primary) 100%);
@@ -201,7 +221,7 @@ body {
     justify-content: space-between;
 }
 
-.about-me-container .page-title {
+.page-title {
     font-family: var(--font-title);
     text-align: center;
     border: 1px solid;
@@ -261,4 +281,56 @@ body {
 .about-me-container .expertise .expertise-item:last-child {
     margin-left: 50%;
     transform: translateX(-50%);
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    height: 100vh;
+    margin-top: 50px;
+    justify-content: space-around;
+    border: 1px solid;
+    padding: 0 25%;
+}
+
+.skills-container .figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .3s ease;
+}
+
+.skills-container .figure__img {
+    width: 60px;
+}
+
+.skills-container .figure__caption {
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.skills-container .skills-group {
+    width: 100%;
+}
+
+.skills-container .skills-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.skills-container .skills-group :first-child{
+    grid-column: 1 / 5;
+    padding-bottom: 30px;
+    font-family: var(--font-title);
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.skills-container .figure:hover {
+    transform: scale(1.1)
 }
