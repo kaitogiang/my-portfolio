@@ -59,11 +59,15 @@
 
 .experience__role {
     grid-row: 2;
+    font-family: var(--font-title);
+    letter-spacing: 2px;
 }
 
 .experience__desc {
     grid-row: 3;
     text-align: justify;
+    font-family: var(--font-body);
+    line-height: 130%;
 }
 
 .experience__image {

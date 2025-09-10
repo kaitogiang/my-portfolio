@@ -1,4 +1,4 @@
-@import url('../base.css');
+@import url("../base.css");
 
 .header__logo {
     width: 59.69px;
@@ -9,8 +9,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: auto;
     font-family: var(--font-title);
+    transform: translateX(15%);
+    flex-wrap: wrap;
 }
 
 .header__nav-item {
@@ -18,7 +20,8 @@
     color: var(--white-color);
     font-weight: 600;
     border: 1px solid transparent;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
+    margin-right: 20px;
 }
 
 .header__nav-item:not(:last-of-type):hover {
