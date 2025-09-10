@@ -23,6 +23,10 @@
     padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -288,11 +292,15 @@ body {
     flex-direction: column;
     align-items: center;
     color: var(--text-color);
-    height: 100vh;
+    min-height: 100vh;
     margin-top: 50px;
     justify-content: space-around;
-    border: 1px solid;
     padding: 0 25%;
+}
+
+.skills-container .page-title {
+    margin-top: 20px;
+    margin-bottom: 10%;
 }
 
 .skills-container .figure {
@@ -315,6 +323,7 @@ body {
 
 .skills-container .skills-group {
     width: 100%;
+    margin-bottom: 10%;
 }
 
 .skills-container .skills-group {
