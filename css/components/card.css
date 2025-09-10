@@ -7,10 +7,15 @@
 }
 
 .card--dark {
-    background: linear-gradient(to right, var(--bg-gradient-s1), var(--bg-gradient-s2));
+    background: linear-gradient(
+        to right,
+        var(--bg-gradient-s1),
+        var(--bg-gradient-s2)
+    );
 }
 
-.card__title, .card__text {
+.card__title,
+.card__text {
     padding: 10px 0 0 30px;
 }
 
@@ -34,6 +39,7 @@
     height: 150%;
 }
 
-.homepage .card__text, .card__title {
+.homepage .card__text,
+.card__title {
     color: var(--white-color);
 }

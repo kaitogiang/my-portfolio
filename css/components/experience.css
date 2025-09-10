@@ -1,0 +1,67 @@
+@import url("../base.css");
+
+.experience__title {
+    margin-bottom: 100px;
+}
+
+.experience__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+    column-gap: 30px;
+}
+
+.experience__item:nth-of-type(odd) .experience__company,
+.experience__item:nth-of-type(odd) .experience__role,
+.experience__item:nth-of-type(odd) .experience__desc {
+    grid-column: 1;
+}
+
+.experience__item:nth-of-type(odd) .experience__image {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1 / 4;
+    border-radius: 10px;
+}
+
+.experience__item:nth-of-type(odd) .experience__company {
+    background-color: var(--tag-bg-organ-color);
+    color: var(--tag-text-organ-color);
+}
+
+.experience__item:nth-of-type(even) .experience__company {
+    background-color: var(--tag-bg-blue-color);
+    color: var(--tag-text-blue-color);
+}
+
+.experience__item:nth-of-type(even) .experience__company,
+.experience__item:nth-of-type(even) .experience__role,
+.experience__item:nth-of-type(even) .experience__desc {
+    grid-column: 2;
+}
+
+.experience__item:nth-of-type(even) .experience__image {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1 / 4;
+    border-radius: 10px;
+}
+
+.experience__company {
+    grid-row: 1;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+    border-radius: 16px;
+    font-family: var(--font-title);
+    font-size: 16px;
+}
+
+.experience__role {
+    grid-row: 2;
+}
+
+.experience__desc {
+    grid-row: 3;
+    text-align: justify;
+}

@@ -1,210 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <link href="css/main.css" rel="stylesheet" />
+        <script defer src="js/main.js"></script>
+        <script
+            crossorigin="anonymous"
+            src="https://kit.fontawesome.com/ff48050d54.js"
+        ></script>
+        <title>My portfolio</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="css/main.css" rel="stylesheet">
-    <script defer src="js/main.js"></script>
-    <script crossorigin="anonymous" src="https://kit.fontawesome.com/ff48050d54.js"></script>
-    <title>My portfolio</title>
-</head>
-
-<body>
-    <main class="container">
-        <section class="homepage">
-            <div class="homepage__wrapper">
-                <!-- Navbar section -->
-                <nav class="header">
-                    <img alt="logo" class="header__logo" src="images/logo.png">
-                    <div class="header__nav">
-                        <a class="header__nav-item" href="#about-me">About me</a>
-                        <a class="header__nav-item" href="#skills">Skills</a>
-                        <a class="header__nav-item" href="#">Projects</a>
-                        <a class="header__nav-item" href="#">Contact me</a>
-                    </div>
-                </nav>
-
-                <div class="hero">
-                    <div class="hero__intro">
-                        <h3 class="hero__greeting">Hi, I am</h3>
-                        <h1 class="hero__name">Giang Dai Huy</h1>
-                        <h4 class="hero__subtitle">
-                            Software Developer
-                        </h4>
-
-                        <div class="hero__socials">
-                            <a class="hero__social-link" href="#"><i class="fa-solid fa-download"></i></a>
-                            <a class="hero__social-link" href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            <a class="hero__social-link" href="#"><i class="fa-brands fa-github"></i></a>
+    <body>
+        <main class="container">
+            <section class="homepage">
+                <div class="homepage__wrapper">
+                    <!-- Navbar section -->
+                    <nav class="header">
+                        <img
+                            alt="logo"
+                            class="header__logo"
+                            src="images/logo.png"
+                        />
+                        <div class="header__nav">
+                            <a class="header__nav-item" href="#about-me"
+                                >About me</a
+                            >
+                            <a class="header__nav-item" href="#skills"
+                                >Skills</a
+                            >
+                            <a class="header__nav-item" href="#">Projects</a>
+                            <a class="header__nav-item" href="#">Contact me</a>
                         </div>
+                    </nav>
+
+                    <div class="hero">
+                        <div class="hero__intro">
+                            <h3 class="hero__greeting">Hi, I am</h3>
+                            <h1 class="hero__name">Giang Dai Huy</h1>
+                            <h4 class="hero__subtitle">Software Developer</h4>
+
+                            <div class="hero__socials">
+                                <a class="hero__social-link" href="#"
+                                    ><i class="fa-solid fa-download"></i
+                                ></a>
+                                <a class="hero__social-link" href="#"
+                                    ><i class="fa-brands fa-linkedin"></i
+                                ></a>
+                                <a class="hero__social-link" href="#"
+                                    ><i class="fa-brands fa-github"></i
+                                ></a>
+                            </div>
+                        </div>
+                        <img
+                            alt="my-image"
+                            class="hero__image"
+                            src="images/avatar.png"
+                        />
                     </div>
-                    <img alt="my-image" class="hero__image" src="images/avatar.png">
-                </div>
-            </div>
-
-            <!-- The short introduction -->
-            <div class="card card--dark">
-                <div class="card__content">
-                    <h3 class="card__title">
-                        Introduction
-                    </h3>
-                    <p class="card__text">
-                        Software Developer with real-world experience delivering cross-platform mobile
-                        and desktop
-                        applications, including deployed projects for international clients. Strong
-                        problem-solving
-                        mindset,
-                        adaptability, and continuous learning attitude, eager to contribute to impactful
-                        products and
-                        grow
-                        within a professional team.
-                    </p>
-                </div>
-                <img class="card__image" alt="logo_it" src="images/Logo_it.png">
-            </div>
-        </section>
-
-        <section class="about-me section-box" id="about-me">
-            <h1 class="about-me__title section-box__title">About me</h1>
-            <p class="about__description card__text">
-                I am a software developer with experience in mobile, desktop, and web applications. My
-                goal is to create
-                reliable and intuitive products that bring real value to users. I enjoy exploring new
-                technologies,
-                improving my skills, and applying clean architecture in my work. With a strong passion
-                for
-                problem-solving, I’m always ready to take on new challenges and grow as a developer.
-            </p>
-            <h3 class="about__explore-heading">Explore</h3>
-            <img alt="" class="about__separator" src="images/separatorBlack.png">
-            <div class="about__expertise">
-                <div class="expertise">
-                    <h2 class="expertise__title">Mobile Apps</h2>
-                    <p class="expertise__text">
-                        I build cross-platform mobile applications with a focus on clean architecture,
-                        smooth
-                        performance, and intuitive user experience. From idea to deployment, I can
-                        design and develop
-                        apps that run seamlessly on both iOS and Android. My priority is to deliver apps
-                        that are
-                        reliable, scalable, and bring real value to users.
-                    </p>
                 </div>
 
-                <div class="expertise">
-                    <h2 class="expertise__title">Desktop Apps</h2>
-                    <p class="expertise__text">
-                        I develop efficient and user-friendly desktop applications tailored to specific
-                        business needs.
-                        With a strong focus on performance and usability, I can deliver solutions that
-                        help streamline
-                        workflows and improve productivity. From lightweight tools to full-featured
-                        software, I ensure
-                        that the apps I build are both practical and reliable.
-                    </p>
+                <!-- The short introduction -->
+                <div class="card card--dark">
+                    <div class="card__content">
+                        <h3 class="card__title">Introduction</h3>
+                        <p class="card__text">
+                            Software Developer with real-world experience
+                            delivering cross-platform mobile and desktop
+                            applications, including deployed projects for
+                            international clients. Strong problem-solving
+                            mindset, adaptability, and continuous learning
+                            attitude, eager to contribute to impactful products
+                            and grow within a professional team.
+                        </p>
+                    </div>
+                    <img
+                        class="card__image"
+                        alt="logo_it"
+                        src="images/Logo_it.png"
+                    />
                 </div>
+            </section>
 
-                <div class="expertise">
-                    <h2 class="expertise__title">Web Development</h2>
-                    <p class="expertise__text">
-                        I create modern, responsive, and scalable web applications using the latest
-                        technologies. My
-                        goal is to ensure fast performance, clean code, and user-friendly interfaces
-                        that work well on
-                        all devices. Whether it’s a small business site or a complex web app, I strive
-                        to combine
-                        functionality with attractive design.
-                    </p>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="skills section-box" id="skills">
-            <h1 class="skills__title section-box__title">Skills</h1>
-            <div class="skills__group">
-                <h3 class="skills__group-title">Using now</h3>
-                <figure class="skills__item">
-                    <img alt="" class="skills__icon" src="images/icon/dart_logo.png">
-                    <figcaption class="skills__caption">Dart</figcaption>
-                </figure>
-                <figure class="skills__item">
-                    <img alt="" class="skills__icon" src="images/icon/flutter_logo.png">
-                    <figcaption class="skills__caption">Flutter</figcaption>
-                </figure>
-                <figure class="skills__item">
-                    <img alt="" class="skills__icon" src="images/icon/firebase_logo.png">
-                    <figcaption class="skills__caption">Firebase</figcaption>
-                </figure>
-                <figure class="skills__item">
-                    <img alt="" class="skills__icon" src="images/icon/git_logo.png">
-                    <figcaption class="skills__caption">Git</figcaption>
-                </figure>
-            </div>
-
-            <div class="skills__group">
-                <h3 class="skills__group-title">Learning</h3>
-                <figure class="skills__item">
-                    <img alt="" class="skills__icon" src="images/icon/html_logo.png">
-                    <figcaption class="skills__caption">HTML</figcaption>
-                </figure>
-                <figure class="skills__item">
-                    <img alt="" class="skills__icon" src="images/icon/css_logo.png">
-                    <figcaption class="skills__caption">CSS</figcaption>
-                </figure>
-                <figure class="skills__item">
-                    <img alt="" class="skills__icon" src="images/icon/js_logo.png">
-                    <figcaption class="skills__caption">Javascript</figcaption>
-                </figure>
-                <figure class="skills__item">
-                    <img alt="" class="skills__icon" src="images/icon/kotlin_logo.png">
-                    <figcaption class="skills__caption">Kotlin</figcaption>
-                </figure>
-            </div>
-
-            <div class="skills__group">
-                <h3 class="skills__group-title">Others</h3>
-                <figure class="skills__item">
-                    <img alt="" class="skills__icon" src="images/icon/english.png">
-                    <figcaption class="skills__caption">English B2</figcaption>
-                </figure>
-                <figure class="skills__item">
-                    <img alt="" class="skills__icon" src="images/icon/communicatin.png">
-                    <figcaption class="skills__caption">Communication</figcaption>
-                </figure>
-                <figure class="skills__item">
-                    <img alt="" class="skills__icon" src="images/icon/problem-solving.png">
-                    <figcaption class="skills__caption">Problem Solving</figcaption>
-                </figure>
-                <figure class="skills__item">
-                    <img alt="" class="skills__icon" src="images/icon/teamwork.png">
-                    <figcaption class="skills__caption">Teamwork</figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <section class="experience-container" id="experience">
-            <h1 class="page-title">Experiences</h1>
-            <div class="work">
-                <h3 class="work__company-name">TQT Global</h3>
-                <h1 class="work__name">Flutter Developer</h1>
-                <p class="work__desc">I developed a cross-platform chat application for Windows and
-                    macOS using Flutter
-                    and Dart. By applying Clean Architecture and a modular design with Melos, I ensured
-                    the project was
-                    scalable and easy to maintain. I optimized performance by integrating ObjectBox
-                    caching, reducing
-                    data fetch times by around 40%. Additionally, I implemented real-time messaging
-                    through WebSocket
-                    and Event Bus to deliver a seamless user experience.
+            <section class="about-me section-box" id="about-me">
+                <h1 class="about-me__title section-box__title">About me</h1>
+                <p class="about__description card__text">
+                    I am a software developer with experience in mobile,
+                    desktop, and web applications. My goal is to create reliable
+                    and intuitive products that bring real value to users. I
+                    enjoy exploring new technologies, improving my skills, and
+                    applying clean architecture in my work. With a strong
+                    passion for problem-solving, I’m always ready to take on new
+                    challenges and grow as a developer.
                 </p>
-            </div>
-            <div class="work">
+                <h3 class="about__explore-heading">Explore</h3>
+                <img
+                    alt=""
+                    class="about__separator"
+                    src="images/separatorBlack.png"
+                />
+                <div class="about__expertise">
+                    <div class="expertise">
+                        <h2 class="expertise__title">Mobile Apps</h2>
+                        <p class="expertise__text">
+                            I build cross-platform mobile applications with a
+                            focus on clean architecture, smooth performance, and
+                            intuitive user experience. From idea to deployment,
+                            I can design and develop apps that run seamlessly on
+                            both iOS and Android. My priority is to deliver apps
+                            that are reliable, scalable, and bring real value to
+                            users.
+                        </p>
+                    </div>
 
-            </div>
-        </section>
-    </main>
-</body>
+                    <div class="expertise">
+                        <h2 class="expertise__title">Desktop Apps</h2>
+                        <p class="expertise__text">
+                            I develop efficient and user-friendly desktop
+                            applications tailored to specific business needs.
+                            With a strong focus on performance and usability, I
+                            can deliver solutions that help streamline workflows
+                            and improve productivity. From lightweight tools to
+                            full-featured software, I ensure that the apps I
+                            build are both practical and reliable.
+                        </p>
+                    </div>
 
+                    <div class="expertise">
+                        <h2 class="expertise__title">Web Development</h2>
+                        <p class="expertise__text">
+                            I create modern, responsive, and scalable web
+                            applications using the latest technologies. My goal
+                            is to ensure fast performance, clean code, and
+                            user-friendly interfaces that work well on all
+                            devices. Whether it’s a small business site or a
+                            complex web app, I strive to combine functionality
+                            with attractive design.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills section-box" id="skills">
+                <h1 class="skills__title section-box__title">Skills</h1>
+                <div class="skills__group">
+                    <h3 class="skills__group-title">Using now</h3>
+                    <figure class="skills__item">
+                        <img
+                            alt=""
+                            class="skills__icon"
+                            src="images/icon/dart_logo.png"
+                        />
+                        <figcaption class="skills__caption">Dart</figcaption>
+                    </figure>
+                    <figure class="skills__item">
+                        <img
+                            alt=""
+                            class="skills__icon"
+                            src="images/icon/flutter_logo.png"
+                        />
+                        <figcaption class="skills__caption">Flutter</figcaption>
+                    </figure>
+                    <figure class="skills__item">
+                        <img
+                            alt=""
+                            class="skills__icon"
+                            src="images/icon/firebase_logo.png"
+                        />
+                        <figcaption class="skills__caption">
+                            Firebase
+                        </figcaption>
+                    </figure>
+                    <figure class="skills__item">
+                        <img
+                            alt=""
+                            class="skills__icon"
+                            src="images/icon/git_logo.png"
+                        />
+                        <figcaption class="skills__caption">Git</figcaption>
+                    </figure>
+                </div>
+
+                <div class="skills__group">
+                    <h3 class="skills__group-title">Learning</h3>
+                    <figure class="skills__item">
+                        <img
+                            alt=""
+                            class="skills__icon"
+                            src="images/icon/html_logo.png"
+                        />
+                        <figcaption class="skills__caption">HTML</figcaption>
+                    </figure>
+                    <figure class="skills__item">
+                        <img
+                            alt=""
+                            class="skills__icon"
+                            src="images/icon/css_logo.png"
+                        />
+                        <figcaption class="skills__caption">CSS</figcaption>
+                    </figure>
+                    <figure class="skills__item">
+                        <img
+                            alt=""
+                            class="skills__icon"
+                            src="images/icon/js_logo.png"
+                        />
+                        <figcaption class="skills__caption">
+                            Javascript
+                        </figcaption>
+                    </figure>
+                    <figure class="skills__item">
+                        <img
+                            alt=""
+                            class="skills__icon"
+                            src="images/icon/kotlin_logo.png"
+                        />
+                        <figcaption class="skills__caption">Kotlin</figcaption>
+                    </figure>
+                </div>
+
+                <div class="skills__group">
+                    <h3 class="skills__group-title">Others</h3>
+                    <figure class="skills__item">
+                        <img
+                            alt=""
+                            class="skills__icon"
+                            src="images/icon/english.png"
+                        />
+                        <figcaption class="skills__caption">
+                            English B2
+                        </figcaption>
+                    </figure>
+                    <figure class="skills__item">
+                        <img
+                            alt=""
+                            class="skills__icon"
+                            src="images/icon/communicatin.png"
+                        />
+                        <figcaption class="skills__caption">
+                            Communication
+                        </figcaption>
+                    </figure>
+                    <figure class="skills__item">
+                        <img
+                            alt=""
+                            class="skills__icon"
+                            src="images/icon/problem-solving.png"
+                        />
+                        <figcaption class="skills__caption">
+                            Problem Solving
+                        </figcaption>
+                    </figure>
+                    <figure class="skills__item">
+                        <img
+                            alt=""
+                            class="skills__icon"
+                            src="images/icon/teamwork.png"
+                        />
+                        <figcaption class="skills__caption">
+                            Teamwork
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="experience section-box" id="experience">
+                <h1 class="experience__title section-box__title">
+                    Experiences
+                </h1>
+                <div class="experience__item">
+                    <h3 class="experience__company">TQT Global</h3>
+                    <h1 class="experience__role">Flutter Developer</h1>
+                    <p class="experience__desc">
+                        I developed a cross-platform chat application for
+                        Windows and macOS using Flutter and Dart. By applying
+                        Clean Architecture and a modular design with Melos, I
+                        ensured the project was scalable and easy to maintain. I
+                        optimized performance by integrating ObjectBox caching,
+                        reducing data fetch times by around 40%. Additionally, I
+                        implemented real-time messaging through WebSocket and
+                        Event Bus to deliver a seamless user experience.
+                    </p>
+                    <img
+                        src="images/chat_wallpaper.jpg"
+                        alt=""
+                        class="experience__image"
+                    />
+                </div>
+
+                <div class="experience__item">
+                    <h3 class="experience__company">SenseTech</h3>
+                    <h1 class="experience__role">Mobile Developer</h1>
+                    <p class="experience__desc">
+                        I developed a cross-platform chat application for
+                        Windows and macOS using Flutter and Dart. By applying
+                        Clean Architecture and a modular design with Melos, I
+                        ensured the project was scalable and easy to maintain. I
+                        optimized performance by integrating ObjectBox caching,
+                        reducing data fetch times by around 40%. Additionally, I
+                        implemented real-time messaging through WebSocket and
+                        Event Bus to deliver a seamless user experience.
+                    </p>
+                    <img
+                        src="images/mobile_wallpaper.png"
+                        alt=""
+                        class="experience__image"
+                    />
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
