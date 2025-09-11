@@ -1,0 +1,71 @@
+@import url("../base.css");
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15% 10px;
+    min-height: 100vh;
+}
+
+.projects__title {
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.project__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.project__image {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.project__image:hover {
+    transform: translateY(-2px);
+    box-shadow: 3px 5px 5px 0px var(--grey-text-color);
+}
+
+.project__title {
+    font-family: var(--font-title);
+    letter-spacing: 2px;
+    text-overflow: ellipsis;
+}
+
+.project_desc {
+    flex: 2;
+    text-overflow: ellipsis;
+    font-family: var(--font-body);
+}
+
+.project__link {
+    display: block;
+    text-decoration: none;
+    background-color: var(--btn-primary);
+    color: var(--white-color);
+    padding: 10px;
+    border: 2px solid transparent;
+    box-shadow: 0 3px 2px 0px var(--grey-text-color);
+    transition: all 0.2s ease;
+    border-radius: 4px;
+    width: fit-content;
+    font-weight: bold;
+    font-family: var(--font-body);
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.project__link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 2px 0px var(--grey-text-color);
+}
