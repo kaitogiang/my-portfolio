@@ -19,10 +19,15 @@
     gap: 40px;
 }
 
+.project__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
 .project__image {
     max-width: 100%;
     border-radius: 10px;
-    margin-bottom: 30px;
     transition: all 0.3s ease;
 }
 
@@ -34,16 +39,20 @@
 .project__title {
     font-family: var(--font-title);
     letter-spacing: 2px;
-    margin-bottom: 30px;
+    text-overflow: ellipsis;
+}
+
+.project_desc {
+    flex: 2;
+    text-overflow: ellipsis;
 }
 
 .project__link {
     display: block;
     text-decoration: none;
-    background-color: var(--grey-bg-color);
+    background-color: var(--btn-primary);
     color: var(--white-color);
     padding: 10px;
-    margin-top: 10px;
     border: 2px solid transparent;
     box-shadow: 0 3px 2px 0px var(--grey-text-color);
     transition: all 0.2s ease;
@@ -51,6 +60,8 @@
     width: fit-content;
     font-weight: bold;
     font-family: var(--font-body);
+    letter-spacing: 2px;
+    font-size: 14px;
 }
 
 .project__link:hover {
