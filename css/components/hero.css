@@ -43,6 +43,9 @@
     margin-right: 10px;
     box-shadow: 0 3px 2px 0px var(--grey-text-color);
     transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .hero__social-link:hover {

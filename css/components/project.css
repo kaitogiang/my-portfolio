@@ -45,6 +45,7 @@
 .project_desc {
     flex: 2;
     text-overflow: ellipsis;
+    font-family: var(--font-body);
 }
 
 .project__link {

@@ -17,6 +17,21 @@
     /* Font */
     --font-title: "Montserrat", sans-serif;
     --font-body: "Open Sans", sans-serif;
+
+    /* Background */
+    /* --check-circle-icon: url("../images/icon/check_circle_icon.svg"); */
+}
+
+@property --check-circle-icon {
+    syntax: "<url>";
+    inherits: false;
+    initial-value: url("../images/icon/check_circle_icon.svg");
+}
+
+@property --wrong-circle-icon {
+    syntax: "<url>";
+    inherits: false;
+    initial-value: url("../images/icon/wrong_circle_icon.svg");
 }
 
 * {

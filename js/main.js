@@ -3,6 +3,13 @@ document.addEventListener("scroll", (event) => {
     handleArrowUpVisibility(window.scrollY);
 });
 
+// const rootStyles = getComputedStyle(document.documentElement);
+// const checkIcon = rootStyles.getPropertyValue("--check-circle-icon").trim();
+// const wrongIcon = rootStyles.getPropertyValue("--wrong-circle-icon").trim();
+
+// console.log(checkIcon);
+// console.log(wrongIcon);
+
 /**
  *
  * @param {Number} offset
