@@ -33,8 +33,12 @@
                             <a href="#experiences" class="header__nav-item"
                                 >Experiences</a
                             >
-                            <a class="header__nav-item" href="#">Projects</a>
-                            <a class="header__nav-item" href="#">Contact me</a>
+                            <a class="header__nav-item" href="#projects"
+                                >Projects</a
+                            >
+                            <a class="header__nav-item" href="#contact"
+                                >Contact me</a
+                            >
                         </div>
                     </nav>
 
@@ -45,13 +49,19 @@
                             <h4 class="hero__subtitle">Software Developer</h4>
 
                             <div class="hero__socials">
-                                <a class="hero__social-link" href="#"
+                                <a
+                                    class="hero__social-link"
+                                    href="resources/Software Engineer - Giang Dai Huy.pdf"
+                                    download
                                     ><i class="fa-solid fa-download"></i
                                 ></a>
                                 <a class="hero__social-link" href="#"
                                     ><i class="fa-brands fa-linkedin"></i
                                 ></a>
-                                <a class="hero__social-link" href="#"
+                                <a
+                                    class="hero__social-link"
+                                    href="https://github.com/kaitogiang"
+                                    target="_blank"
                                     ><i class="fa-brands fa-github"></i
                                 ></a>
                             </div>
@@ -333,6 +343,12 @@
                             neque voluptas voluptates unde voluptatum tempore
                             laborum obcaecati mollitia.
                         </p>
+                        <a
+                            href="https://github.com/kaitogiang/Recipe-Mobile-App.git"
+                            class="project__link"
+                            target="_blank"
+                            >View Source</a
+                        >
                     </div>
 
                     <div class="project__item">
@@ -349,9 +365,55 @@
                             neque voluptas voluptates unde voluptatum tempore
                             laborum obcaecati mollitia.
                         </p>
+                        <a
+                            href="https://github.com/kaitogiang/Job-Finder-App.git"
+                            class="project__link"
+                            target="_blank"
+                            >View Source</a
+                        >
                     </div>
                 </div>
             </section>
+
+            <section id="contact" class="contact section-box">
+                <h1 class="contact__title section-box__title">Contact Me</h1>
+                <p class="contact__desc">
+                    If you’d like to get in touch or collaborate, feel free to
+                    send me a message using the form below. Your message will be
+                    delivered directly to my email.
+                </p>
+
+                <form class="contact-form">
+                    <div class="contact-form__group">
+                        <label class="contact-form__label" for="email">
+                            Your email:
+                        </label>
+                        <input
+                            class="contact-form__input"
+                            type="email"
+                            name="email"
+                        />
+                    </div>
+                    <div class="contact-form__group">
+                        <label class="contact-form__label" for="message">
+                            Your message:
+                        </label>
+                        <textarea
+                            class="contact-form__input"
+                            name="message"
+                        ></textarea>
+                    </div>
+
+                    <!-- your other form fields go here -->
+                    <button class="contact-form__btn" type="submit">
+                        Submit &#x276F;
+                    </button>
+                </form>
+            </section>
         </main>
+
+        <a id="arrow-up" href="#" class="arrow-up">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
     </body>
 </html>
