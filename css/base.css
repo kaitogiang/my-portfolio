@@ -13,6 +13,7 @@
     --tag-bg-blue-color: #d0e6ff;
     --tag-text-blue-color: #1a25ff;
     --btn-primary: #3f8d00;
+    --btn-secondary: #185700;
 
     /* Font */
     --font-title: "Montserrat", sans-serif;
@@ -32,6 +33,12 @@
     syntax: "<url>";
     inherits: false;
     initial-value: url("../images/icon/wrong_circle_icon.svg");
+}
+
+@property --current-input-validate-icon {
+    syntax: "<url>";
+    inherits: false;
+    initial-value: "";
 }
 
 * {
