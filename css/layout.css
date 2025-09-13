@@ -1,3 +1,7 @@
+.homepage__wrapper {
+    position: relative;
+}
+
 .homepage__wrapper::after {
     content: "";
     position: absolute;
@@ -48,4 +52,26 @@
     margin-top: 100px;
     justify-content: space-around;
     padding: 0 25%;
+}
+
+@media screen and (max-width: 2560px) {
+}
+
+@media screen and (max-width: 1024px) {
+    .homepage__wrapper::after {
+        width: 65%;
+        clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .homepage {
+        height: auto;
+        background-image: var(--background-image);
+        overflow: hidden;
+    }
+
+    .homepage__wrapper::after {
+        width: 55%;
+    }
 }
