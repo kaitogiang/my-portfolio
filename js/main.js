@@ -3,6 +3,13 @@ const contactMessageInput = document.getElementById("message");
 const rootStyles = getComputedStyle(document.documentElement);
 const checkIcon = rootStyles.getPropertyValue("--check-circle-icon").trim();
 const wrongIcon = rootStyles.getPropertyValue("--wrong-circle-icon").trim();
+const toggleNavButton = document.getElementById("toggle_nav");
+const headerNav = document.getElementById("header_nav");
+const headerCloseButton = document.getElementById("header_close_icon");
+
+//get class
+const headerWrapperElement = document.querySelector(".header__wrapper");
+const heroElement = document.querySelector(".hero");
 
 document.addEventListener("scroll", (event) => {
     console.log(window.scrollY);
@@ -32,6 +39,8 @@ function handleArrowUpVisibility(offset) {
 
 function setupListeners() {
     contactEmailInput.addEventListener("input", validateEmailInput);
+    toggleNavButton.addEventListener("click", handleToggleNavClicked);
+    headerCloseButton.addEventListener("click", handleCloseNavClicked);
 }
 /**
  *
@@ -51,4 +60,17 @@ function validateEmailInput(event) {
     } else {
         contactEmailInput.style.backgroundImage = wrongIcon;
     }
+}
+
+function handleToggleNavClicked(event) {
+    console.log("Click hambuger");
+    headerWrapperElement.classList.add("hide-header");
+    headerNav.classList.add("show-nav");
+    heroElement.style.height = 70 + "vh";
+}
+
+function handleCloseNavClicked(event) {
+    headerNav.classList.remove("show-nav");
+    headerWrapperElement.classList.remove("hide-header");
+    heroElement.style.height = 100 + "vh";
 }

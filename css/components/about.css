@@ -68,3 +68,43 @@
     font-family: var(--font-body);
     line-height: 130%;
 }
+
+@media screen and (max-width: 768px) {
+    .about-me__title {
+        font-size: 2rem;
+    }
+
+    .about__description {
+        text-align: justify;
+        padding: 0;
+    }
+
+    .about__explore-heading {
+        text-transform: uppercase;
+        font-family: var(--font-title);
+        font-weight: 500;
+        border-left: 2px solid;
+        border-right: 2px solid;
+        padding: 0 20px;
+        font-size: 2rem;
+    }
+
+    .about__expertise {
+        grid-template-columns: 1fr;
+    }
+
+    .about__expertise > .expertise {
+        grid-column: 1;
+        margin: 0;
+        transform: translate(0);
+    }
+
+    .expertise__title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .expertise__text {
+        font-size: 1.3rem;
+    }
+}

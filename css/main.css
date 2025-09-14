@@ -35,3 +35,9 @@
     opacity: 0;
     transition: all 0.3s ease;
 }
+
+@media screen and (max-width: 768px) {
+    .section-box__title {
+        font-size: 2rem;
+    }
+}

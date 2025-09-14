@@ -1,9 +1,20 @@
 @import url("../base.css");
 
+.header_close_icon {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--white-color);
+    font-size: 2rem;
+}
+
 .header__toggle {
     display: none;
-    font-size: 28px;
+    font-size: 30px;
     padding-left: 20px;
+    background: none;
+    box-shadow: none;
+    border: none;
 }
 
 .header__logo {
@@ -67,7 +78,10 @@
 }
 
 @media screen and (max-width: 768px) {
-    .header__nav {
+    .header_close_icon {
+        display: block;
+        align-self: flex-end;
+        margin-right: 20px;
     }
 
     .header__toggle {
@@ -83,22 +97,37 @@
         display: none;
     }
 
+    .header__wrapper {
+        display: block;
+    }
+
+    .header__wrapper.hide-header {
+        display: none;
+    }
+
     .header__nav {
         flex-direction: column;
-        position: fixed;
-        justify-content: start;
-        align-items: start;
-        padding: 20px 30px;
-        height: 100vh;
-        width: 35vw;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        padding: 20px 0;
+        width: 100%;
         top: 0;
-        left: -100%;
-        /* background-color: var(--text-color); */
-        z-index: -1;
+        left: 0;
+        background-color: var(--text-color);
+        z-index: 10;
+        transform: translateX(0);
+        margin: 0;
+        display: none;
+    }
+
+    .header__nav.show-nav {
+        display: flex;
     }
 
     .header__nav-item {
         margin-bottom: 20px;
+        font-size: 1.3rem;
     }
 
     .header__nav-item:last-child {

@@ -83,7 +83,6 @@
 
     .card--dark::after {
         content: "";
-        color: red;
         background: var(--background-it-logo);
         background-position: center;
         background-size: cover;
