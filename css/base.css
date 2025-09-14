@@ -40,7 +40,7 @@
 @property --background-image {
     syntax: "<url>";
     inherits: false;
-    initial-value: url("../../images/background.png");
+    initial-value: url("../images/background.png");
 }
 
 @property --background-separator-white {
