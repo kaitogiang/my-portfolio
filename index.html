@@ -18,19 +18,31 @@
                 <div class="homepage__wrapper">
                     <!-- Navbar section -->
                     <nav class="header">
-                        <img
-                            alt="logo"
-                            class="header__logo"
-                            src="images/logo.png"
-                        />
-                        <div class="header__nav">
+                        <div class="header__wrapper">
+                            <img
+                                alt="logo"
+                                class="header__logo"
+                                src="images/logo.png"
+                            />
+                            <button id="toggle_nav" class="header__toggle">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+
+                        <div id="header_nav" class="header__nav">
+                            <button
+                                id="header_close_icon"
+                                class="header_close_icon"
+                            >
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
                             <a class="header__nav-item" href="#about-me"
                                 >About me</a
                             >
                             <a class="header__nav-item" href="#skills"
                                 >Skills</a
                             >
-                            <a href="#experiences" class="header__nav-item"
+                            <a class="header__nav-item" href="#experiences"
                                 >Experiences</a
                             >
                             <a class="header__nav-item" href="#projects"
@@ -51,8 +63,8 @@
                             <div class="hero__socials">
                                 <a
                                     class="hero__social-link"
-                                    href="resources/Software Engineer - Giang Dai Huy.pdf"
                                     download
+                                    href="resources/Software Engineer - Giang Dai Huy.pdf"
                                     ><i class="fa-solid fa-download"></i
                                 ></a>
                                 <a
@@ -94,8 +106,8 @@
                         </p>
                     </div>
                     <img
-                        class="card__image"
                         alt="logo_it"
+                        class="card__image"
                         src="images/Logo_it.png"
                     />
                 </div>
@@ -284,8 +296,8 @@
             </section>
 
             <section
-                id="experiences"
                 class="experience section-box"
+                id="experiences"
                 id="experience"
             >
                 <h1 class="experience__title section-box__title">
@@ -305,9 +317,9 @@
                         Event Bus to deliver a seamless user experience.
                     </p>
                     <img
-                        src="images/chat_wallpaper.jpg"
                         alt=""
                         class="experience__image"
+                        src="images/chat_wallpaper.jpg"
                     />
                 </div>
 
@@ -324,21 +336,21 @@
                         processing speed by approximately 30%.
                     </p>
                     <img
-                        src="images/mobile_wallpaper.png"
                         alt=""
                         class="experience__image"
+                        src="images/mobile_wallpaper.png"
                     />
                 </div>
             </section>
 
-            <section id="projects" class="projects section-box">
+            <section class="projects section-box" id="projects">
                 <h1 class="projects__title section-box__title">My Projects</h1>
                 <div class="project">
                     <div class="project__item">
                         <img
-                            src="images/food_app_project.jpg"
                             alt=""
                             class="project__image"
+                            src="images/food_app_project.jpg"
                         />
                         <h3 class="project__title">Food Recipe App</h3>
                         <p class="project_desc">
@@ -347,8 +359,8 @@
                             allows users to create their own cooking task lists.
                         </p>
                         <a
-                            href="https://github.com/kaitogiang/Recipe-Mobile-App.git"
                             class="project__link"
+                            href="https://github.com/kaitogiang/Recipe-Mobile-App.git"
                             target="_blank"
                             >View Source</a
                         >
@@ -356,9 +368,9 @@
 
                     <div class="project__item">
                         <img
-                            src="images/job_finder_app_project.jpg"
                             alt=""
                             class="project__image"
+                            src="images/job_finder_app_project.jpg"
                         />
                         <h3 class="project__title">Job Finder App</h3>
                         <p class="project_desc">
@@ -367,8 +379,8 @@
                             job listings.
                         </p>
                         <a
-                            href="https://github.com/kaitogiang/Job-Finder-App.git"
                             class="project__link"
+                            href="https://github.com/kaitogiang/Job-Finder-App.git"
                             target="_blank"
                             >View Source</a
                         >
@@ -376,7 +388,7 @@
                 </div>
             </section>
 
-            <section id="contact" class="contact section-box">
+            <section class="contact section-box" id="contact">
                 <h1 class="contact__title section-box__title">Contact Me</h1>
                 <p class="contact__desc">
                     If you’d like to get in touch or collaborate, feel free to
@@ -384,15 +396,18 @@
                     delivered directly to my email.
                 </p>
 
-                <form class="contact-form">
+                <form id="form" class="contact-form">
                     <div class="contact-form__group">
                         <label class="contact-form__label" for="email">
                             Your email:
                         </label>
                         <input
                             class="contact-form__input"
-                            type="email"
+                            id="email"
                             name="email"
+                            placeholder="Enter your email"
+                            required
+                            type="email"
                         />
                     </div>
                     <div class="contact-form__group">
@@ -401,7 +416,10 @@
                         </label>
                         <textarea
                             class="contact-form__input"
+                            id="message"
                             name="message"
+                            placeholder="Write your message here"
+                            required
                         ></textarea>
                     </div>
 
@@ -413,8 +431,14 @@
             </section>
         </main>
 
-        <a id="arrow-up" href="#" class="arrow-up">
+        <a class="arrow-up" href="#" id="arrow-up">
             <i class="fa-solid fa-arrow-up"></i>
         </a>
+
+        <div id="alert" class="alert alert--success alert--hide">
+            <span id="alert-close-button" class="closebtn">&times;</span>
+            <strong id="alert-title">Danger!</strong>
+            <span id="alert-content">Indicates a dangerous or .</span>
+        </div>
     </body>
 </html>

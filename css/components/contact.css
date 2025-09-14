@@ -59,10 +59,11 @@
 }
 
 input.contact-form__input {
-    background-image: "";
+    background-image: var(--current-input-validate-icon);
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: right 5px center;
+    transition: all 0.3s ease;
 }
 
 textarea.contact-form__input {
@@ -80,4 +81,41 @@ textarea.contact-form__input {
     color: var(--white-color);
     cursor: pointer;
     letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.contact-form__btn:hover {
+    background-color: var(--btn-secondary);
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        padding: 20px 10% 10px;
+    }
+
+    .contact__desc {
+        font-size: 1.3rem;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form__label {
+        font-size: 1.3rem;
+    }
+
+    .contact-form__input {
+        height: 55px;
+        font-size: 1.3rem;
+    }
+
+    textarea.contact-form__input {
+        height: 200px;
+    }
+
+    .contact-form__btn {
+        padding: 15px;
+        font-size: 1.3rem;
+    }
 }

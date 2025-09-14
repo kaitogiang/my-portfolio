@@ -13,6 +13,9 @@
     --tag-bg-blue-color: #d0e6ff;
     --tag-text-blue-color: #1a25ff;
     --btn-primary: #3f8d00;
+    --btn-secondary: #185700;
+    --success-color: #2eb886;
+    --error-color: #f44336;
 
     /* Font */
     --font-title: "Montserrat", sans-serif;
@@ -32,6 +35,30 @@
     syntax: "<url>";
     inherits: false;
     initial-value: url("../images/icon/wrong_circle_icon.svg");
+}
+
+@property --background-image {
+    syntax: "<url>";
+    inherits: false;
+    initial-value: url("../../images/background.png");
+}
+
+@property --background-separator-white {
+    syntax: "<url>";
+    inherits: false;
+    initial-value: url("../images/separatorWhite.png");
+}
+
+@property --background-it-logo {
+    syntax: "<url>";
+    inherits: false;
+    initial-value: url("../images/Logo_it.png");
+}
+
+@property --current-input-validate-icon {
+    syntax: "<url>";
+    inherits: false;
+    initial-value: "";
 }
 
 * {
