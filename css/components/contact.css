@@ -5,9 +5,14 @@
     color: var(--white-color);
     position: relative;
     min-height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.contact__title {
+    margin-bottom: 10%;
 }
 
 .contact::before {
@@ -24,6 +29,7 @@
     font-family: var(--font-body);
     text-align: center;
     letter-spacing: 2px;
+    margin-bottom: 10%;
 }
 
 .contact-form {
