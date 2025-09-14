@@ -87,3 +87,35 @@ textarea.contact-form__input {
 .contact-form__btn:hover {
     background-color: var(--btn-secondary);
 }
+
+@media screen and (max-width: 768px) {
+    .contact {
+        padding: 20px 10% 10px;
+    }
+
+    .contact__desc {
+        font-size: 1.3rem;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form__label {
+        font-size: 1.3rem;
+    }
+
+    .contact-form__input {
+        height: 55px;
+        font-size: 1.3rem;
+    }
+
+    textarea.contact-form__input {
+        height: 200px;
+    }
+
+    .contact-form__btn {
+        padding: 15px;
+        font-size: 1.3rem;
+    }
+}
