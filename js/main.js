@@ -6,7 +6,7 @@ const wrongIcon = rootStyles.getPropertyValue("--wrong-circle-icon").trim();
 const toggleNavButton = document.getElementById("toggle_nav");
 const headerNav = document.getElementById("header_nav");
 const headerCloseButton = document.getElementById("header_close_icon");
-
+const headerNavItemList = document.getElementsByClassName("header__nav-item");
 //get class
 const headerWrapperElement = document.querySelector(".header__wrapper");
 const heroElement = document.querySelector(".hero");
@@ -41,6 +41,9 @@ function setupListeners() {
     contactEmailInput.addEventListener("input", validateEmailInput);
     toggleNavButton.addEventListener("click", handleToggleNavClicked);
     headerCloseButton.addEventListener("click", handleCloseNavClicked);
+    for (let headerItem of headerNavItemList) {
+        headerItem.addEventListener("click", handleCloseNavClicked);
+    }
 }
 /**
  *
