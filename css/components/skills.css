@@ -1,4 +1,4 @@
-@import url('../base.css');
+@import url("../base.css");
 
 .skills__group {
     display: grid;
@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 
 .skills__icon {
@@ -44,6 +44,15 @@
 }
 
 .skills__item:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
+@media screen and (max-width: 768px) {
+    .skills__group-title {
+        font-size: 1.5rem;
+    }
+
+    .skills__caption {
+        font-size: 1.3rem;
+    }
+}
