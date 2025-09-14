@@ -1,0 +1,45 @@
+.alert {
+    padding: 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    font-size: 1.1rem;
+    z-index: 10;
+}
+
+.alert--error {
+    background-color: var(--error-color);
+}
+
+.alert--success {
+    background-color: var(--success-color);
+}
+
+.alert--hide {
+    display: none;
+}
+
+.alert--show {
+    display: block;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+@media screen and (max-width: 768px) and (max-width: 651px) {
+    .alert {
+        width: 100vw;
+    }
+}
