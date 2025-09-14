@@ -67,7 +67,7 @@
 @media screen and (max-width: 768px) {
     .homepage {
         height: auto;
-        background-image: var(--background-image);
+        background-image: url("../images/background.png");
         overflow: hidden;
     }
 
